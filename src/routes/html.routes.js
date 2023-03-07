@@ -5,6 +5,10 @@ const router = Router()
 //ROUTES
 
 router.get('/', async (req, res) => {
+    res.sendFile("/pages/index.html")
+})
+
+router.get('/', async (req, res) => {
     res.sendFile("/pages/login.html")
 })
 
@@ -19,6 +23,7 @@ router.get('/', async (req, res) => {
 router.get('/', async (req, res) => {
     res.sendFile("/pages/myAccount.html")
 })
+
 
 
 //EXPORT

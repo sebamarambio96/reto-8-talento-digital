@@ -21,4 +21,5 @@ function signOut() {
         localStorage.removeItem('token');
         location.reload();
     }
-    )}
+    )
+}

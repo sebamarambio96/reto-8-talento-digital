@@ -43,10 +43,37 @@
                 </div>
                 <section class="col-lg-5 my-3 d-flex flex-column align-items-center">
                     <div class="imgContainerDB rounded-circle border border-info border-5">
-                        <img id="imgProductDB" class="card-img-top imgProductDB rounded-circle" src="../img/Hidetaka_Miyazaki.png" alt="#" />
+                        <img id="imgProductDB" class="card-img-top imgProductDB rounded-circle"
+                            src="../img/Loading.webp" alt="#"/>
                     </div>
-                    <div>
-                        <button id="uploudImg" class="btn btn-secondary my-2">Cambiar foto de perfil</button>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-secondary my-2" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Cambiar foto de
+                        perfil
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <form class="d-flex flex-column align-items-center">
+                                    <Input type="file" name="profileImg" id="profileImg" accept="image/*">
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                        <button id="uploudImg" type="button" class="btn btn-success my-2">Guardar
+                                            cambios</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </div>

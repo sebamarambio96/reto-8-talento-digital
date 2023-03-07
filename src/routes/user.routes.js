@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { getUserInfo, addUser, login} from "../controllers/user.controllers.js";
+import { getUserInfo, addUser, login, uploadIMG} from "../controllers/user.controllers.js";
 
 const router = Router()
 
@@ -8,6 +8,9 @@ router.get('/profile', getUserInfo)
 
 //Login
 router.post('/login', login)
+
+//Login
+router.post('/imgUpload', uploadIMG)
 
 //ADD new user
 router.post('/register',addUser)
